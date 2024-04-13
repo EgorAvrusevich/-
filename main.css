@@ -145,23 +145,21 @@ li{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-.info{
+.info {
   display: flex;
   flex-direction: column;
-  height: auto;
+  justify-content: center;
   align-items: center;
+  height: auto;
   margin-bottom: 50px;
 }
 
 .cap {
   width: 40%;
-  display:flex;
-  position: relative;
   font-family: 'Montserrat';
   font-size: 48px;
   font-weight: bold;
   text-align: center;
-  justify-self: center;
   margin-bottom: 2%;
 }
 
@@ -196,6 +194,7 @@ li{
   position: relative;
   font-family: 'Montserrat';
   text-align: center;
+  justify-content: center;
 }
 
 .line {
