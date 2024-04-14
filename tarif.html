@@ -1,12 +1,133 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
-        <meta name="viewport" content="width=device-width">
         <meta charset="UTF-8">
-        <link href="main.css" rel="stylesheet" media="all">
-        <link href="main-table.css" rel="stylesheet" media="(min-width:768px) and (max-width:1280px)">
-        <link href="main-phone.css" rel="stylesheet" media="(min-width:430px) and (max-width:767px)">
-
-        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link href="tarif.css" rel="stylesheet" media="all">
     </head>
+    <body>
+        <div class="head_rectangle">
+            <div class="head">
+                <div class="circle"></div>
+                <div class="logo">
+                    <img src="images/logo.png" alt="Логотип">
+                    <h1 class="product-name"><a href="main.html">FreedomVPN</a></h1>
+                </div>
+                <div class="AdapFlex">
+                    <ul class="menu">
+                        <li><a href="login.html">Войти</a></li>
+                        <li><a href="#Product">Продукт</a></li>
+                        <li><a href="tarif.html">Купить</a></li>
+                        <li><a href="profile.html">Кабинет</a></li>
+                    <div class="language">
+                        <li><div class="dropdown">
+                            <button class="dropdown-button">Выберите язык</button>
+                            <ul class="dropdown-menu">
+                              <li><a href="#" class="selected">Русский</a></li>
+                              <li><a href="#">Английский</a></li>
+                              <li><a href="#">Французский</a></li>
+                            </ul>
+                          </div>
+                        </li>
+                    </div>
+                    </ul>
+                </div>
+            </div>
+            <div class="info">
+                <div class="cap">Подключитесь к FreedomVPN
+                    в 3 простых шага</div>
+            </div>
+        </div>
+<!-- верхняя панель(сверху) -->
+        <div class="step1">
+            <p class="step">Шаг 1:</p>
+            <p>Выберите подходящий VPN-тариф:</p>
+            <div class="tarifs">
+                <div class="tarif1">
+                    <p class="monthes">1 месяц</p>
+                    <p class="cost">$12.95</p>
+                    <p class="in_month">в месяц</p>
+                    <button class="custom-button">
+                        <span class="button-text">Выбрать план &rarr;</span>
+                    </button>
+                    <p class="garant">30 дней гарантия возврата</p>
+                </div>
+                <div class="tarif2">
+                    <p class="monthes">12 месяцев</p>
+                    <p class="discount">$12.99</p>
+                    <p class="cost">$6.95</p>
+                    <p class="in_month">в месяц</p>
+                    <button class="custom-button">
+                        <span class="button-text">Выбрать план &rarr;</span>
+                    </button>
+                    <p class="garant">30 дней гарантия возврата</p>
+                </div>
+                <div class="tarif3">
+                    <p class="monthes">6 месяцев</p>
+                    <p class="cost">$9.99</p>
+                    <p class="in_month">в месяц</p>
+                    <button class="custom-button">
+                        <span class="button-text">Выбрать план &rarr;</span>
+                    </button>
+                    <p class="garant">30 дней гарантия возврата</p>
+                </div>
+            </div>
+        </div>
+        <div class="other">
+            <div class="step2">
+                <p class="step">Шаг 2:</p>
+                <p>Введите адрес электронной почты:</p>
+                <p class="warning">Гарантия конфиденциальности информации: личные сведения не передаются третьим сторонам и используются исключительно для предоставления услуг.</p>
+                <div class="form-group">
+                    <input type="text" id="email" name="email" placeholder="Адрес электронной почты" required>
+                </div>
+            </div>
+            <div class="step3">
+                <p class="step">Шаг 3:</p>
+                <p>Выберите способ оплаты, чтобы купить подписку на VPN-сервис:</p>
+                <p class="protect"><img src="images/idenf.png">Безопасное оформление. Ваши данные надежно защищены.</p>
+                <div class="pay">
+                    <div class="way_pay">
+                        <div>Банковская карта <img src="images/credit card.png" height="24px"><img src="images/down arrow.png" height="9px"></div>
+                        <div>PayPal<img src="images/PayPal.png" height="24px"><img src="images/down arrow.png" height="9px"></div>
+                        <div>Bitcoin<img src="images/Bitcoin.png" height="24px"><img src="images/down arrow.png" height="9px"></div>
+                        <div>Другой способ<img src="images/down arrow.png" height="9px"></div>
+                    </div>
+                    <div class="info_pay">
+                        <div class="classic">
+                            <p class="info_step">Информация по заказу</p>
+                            <div class="total"><p>12-месячный тариф</p><p class="dop1">$6.95/мес</p></div>
+                            <div class="img"><img src="images/Line 3.png"></div>
+                            <div class="itog">
+                                <p>Всего к оплате:</p>
+                                <div class="summ">
+                                    <p>$83.4</p>
+                                    <p class="eco">Экономия $64</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="exten">
+                            <p>- 12-месячный тарифный план FreedomVPN оплачивается однократно ($6.95/месяц в среднем).</p>
+                            <p>- Мы предоставляем 30-дневную гарантию возврата денег.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <div class="background_circle1"></div>
+        <div class="background_circle2"></div>
+        <div class="footer">
+            <div class="logo">
+                <img src="images/logo.png" alt="Логотип">
+                <h1 class="product-name">FreedomVPN</h1>
+            </div>
+            <div>Курсовой проект Аврусевича Егора Николаевича ФИТ 1-9</div>
+        </div>
+        <script src="language.js"></script>
 </html>
