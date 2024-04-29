@@ -1,13 +1,14 @@
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
   background-color: rgba(243, 243, 243, 1);
 }
 
-a{
- text-decoration: none;
- color: inherit;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 a:visited {
@@ -15,11 +16,11 @@ a:visited {
   text-decoration: none;
 }
 
-ul{
+ul {
   list-style-type: none;
 }
 
-ul li{
+ul li {
   display: block;
   padding: 0;
   margin: 0;
@@ -27,34 +28,34 @@ ul li{
 }
 
 
-.menu{
+.menu {
   display: flex;
-  align-items :center;
-	margin-left: 114px;
+  align-items: center;
+  margin-left: 114px;
   padding: 0;
   margin: 0;
   margin-right: 100px;
 }
 
-.menu li{
+.menu li {
   margin-right: 40px;
   flex-wrap: nowrap;
   flex: 1;
 }
 
-.menu li:last-child{
+.menu li:last-child {
   margin-right: 45px;
 }
 
-.menu a{
+.menu a {
   padding-bottom: 4px;
 }
 
-.menu a:hover{
+.menu a:hover {
   border-bottom: 1px solid black;
 }
 
-li{
+li {
   font-family: 'Montserrat';
 }
 
@@ -114,8 +115,8 @@ li{
   font-weight: bold;
 }
 
-.head {
-  position:static;
+header {
+  position: static;
   z-index: 1;
   display: flex;
   width: 100%;
@@ -155,7 +156,7 @@ li{
   background-size: contain;
 }
 
-.AdapFlex{
+.AdapFlex {
   display: flex;
   align-items: center;
 }
@@ -166,12 +167,12 @@ li{
   border-radius: 50%;
   background-color: rgba(122, 248, 203, 0.3);
   filter: blur(130px);
-  position: absolute; 
+  position: absolute;
   left: 35%;
   top: -30%;
   overflow: hidden;
   pointer-events: none;
-  z-index: 1; 
+  z-index: 1;
 }
 
 /*  оформление шапки страницы(сверху) */
@@ -281,20 +282,21 @@ li{
   justify-content: center;
   align-items: center;
 }
- .pluses img{
+
+.pluses img {
   margin-top: 30px;
   margin-bottom: 30px;
 }
 
-.pluses div{
+.pluses div {
   font-family: 'Montserrat';
   font-weight: bold;
   font-size: 16px;
   text-align: center;
 }
 
-.pluses p{
-  font-family: 'Open Sans';
+.pluses p {
+  font-family: 'Montserrat';
   font-size: 12px;
   text-align: center;
   margin-left: 10%;
@@ -315,7 +317,7 @@ li{
   background-size: contain;
 }
 
-.mes{
+.mes {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -328,22 +330,23 @@ li{
   text-overflow: ellipsis;
 }
 
-.mes p{
+.mes p {
   font-weight: bold;
 }
 
-.photo{
+.photo {
   width: 51px;
   height: 51px;
+  margin: 12px;
 }
 
-.photo img{
+.photo img {
   border-radius: 50%;
   width: 51px;
   height: 51px;
 }
 
-.feedbacks{
+.feedbacks {
   display: flex;
   z-index: 1;
   flex-wrap: wrap;
@@ -351,7 +354,7 @@ li{
   align-items: center;
 }
 
-.feedbacks div{
+.feedbacks div {
   display: flex;
   z-index: 1;
   background-color: rgba(243, 243, 243, 1);
@@ -359,7 +362,7 @@ li{
   border-radius: 10px;
   margin: 12px;
   font-family: 'Montserrat';
-  font-size: 14;
+  font-size: 14px;
 }
 
 .text_f {
@@ -367,7 +370,7 @@ li{
   align-items: center;
 }
 
-.footer{
+footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -376,30 +379,30 @@ li{
   font-family: 'Montserrat';
 }
 
-.background_circle1{
-    width: 50%;
-    height: 30%;
-    border-radius: 50%;
-    background-color: rgba(255, 242, 208, 1);
-    filter: blur(100px);
-    position: absolute; 
-    right: -20%;
-    top: 90%;
-    overflow: hidden;
-    pointer-events: none;
-    z-index: 0; 
+.background_circle1 {
+  width: 50%;
+  height: 30%;
+  border-radius: 50%;
+  background-color: rgba(255, 242, 208, 1);
+  filter: blur(100px);
+  position: absolute;
+  right: -20%;
+  top: 90%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
 }
 
-.background_circle2{
+.background_circle2 {
   width: 30%;
   height: 120%;
   border-radius: 50%;
   background-color: rgba(168, 255, 118, 0.3);
   filter: blur(100px);
-  position: absolute; 
+  position: absolute;
   left: 20%;
   bottom: -140%;
   overflow: hidden;
   pointer-events: none;
-  z-index: 0; 
+  z-index: 0;
 }

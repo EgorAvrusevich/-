@@ -1,294 +1,296 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    background-color: rgba(243, 243, 243, 1);
-  }
-  
-  a{
-   text-decoration: none;
-   color: inherit;
-  }
-  
-  a:visited {
-    color: inherit;
-    text-decoration: none;
-  }
-  
-  ul{
-    list-style-type: none;
-  }
-  
-  ul li{
-    display: block;
-    padding: 0;
-    margin: 0;
-    align-items: center;
-  }
-  
-  
-  .menu{
-    display: flex;
-    align-items :center;
-      margin-left: 114px;
-    padding: 0;
-    margin: 0;
-    margin-right: 100px;
-  }
-  
-  .menu li{
-    margin-right: 40px;
-    flex-wrap: nowrap;
-    flex: 1;
-  }
-  
-  .menu li:last-child{
-    margin-right: 45px;
-  }
-  
-  .menu a{
-    padding-bottom: 4px;
-  }
-  
-  .menu a:hover{
-    border-bottom: 1px solid black;
-  }
-  
-  li{
-    font-family: 'Montserrat';
-  }
-  
-  .menu .language {
-    display: flex;
-    align-items: center;
-    margin-left: 10px;
-    vertical-align: middle;
-  }
-  
-  .menu .language img {
-    margin-right: 5px;
-  }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-button {
-    padding: 10px 20px;
-    background-color: #f1f1f1;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .dropdown-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    min-width: 160px;
-    background-color: #f1f1f1;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0s linear 0.3s;
-  }
-  
-  .dropdown-menu.open {
-    opacity: 1;
-    visibility: visible;
-    transition-delay: 0s;
-  }
-  
-  .dropdown-menu li {
-    padding: 10px;
-  }
-  
-  .dropdown-menu li a {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  .dropdown-menu li a.selected {
-    font-weight: bold;
-  }
-  
-  .head {
-    position:static;
-    z-index: 1;
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-  }
-  
-  .logo {
-    display: flex;
-    align-items: center;
-    margin-left: 5%;
-  }
-  
-  .logo img {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-  }
-  
-  .product-name {
-    font-family: 'Advent Pro', bold;
-    font-size: 32px;
-    font-weight: bold;
-  }
-  
-  .head_rectangle {
-    position: static;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 120px;
-    z-index: 1;
-    background-image: url(images/Rectangle\ 6.png);
-    background-repeat: repeat-x;
-    background-position: top;
-    background-size: contain;
-  }
-  
-  .AdapFlex{
-    display: flex;
-    align-items: center;
-  }
-  
-  .circle {
-    width: 65%;
-    height: 65%;
-    border-radius: 50%;
-    background-color: rgba(122, 248, 203, 0.3);
-    filter: blur(130px);
-    position: absolute; 
-    left: 35%;
-    top: -30%;
-    overflow: hidden;
-    pointer-events: none;
-    z-index: 1; 
-  }
-  
-  /*  оформление шапки страницы(сверху) */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: rgba(243, 243, 243, 1);
+}
 
-  .footer{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 5%;
-    margin-right: 10%;
-    font-family: 'Montserrat';
-  }
-  
-  .background_circle1{
-      width: 50%;
-      height: 30%;
-      border-radius: 50%;
-      background-color: rgba(255, 242, 208, 1);
-      filter: blur(100px);
-      position: absolute; 
-      right: -20%;
-      top: 30%;
-      overflow: hidden;
-      pointer-events: none;
-      z-index: 0; 
-  }
-  
-  .background_circle2{
-    width: 30%;
-    height: 40%;
-    border-radius: 50%;
-    background-color: rgba(168, 255, 118, 0.3);
-    filter: blur(100px);
-    position: absolute; 
-    left: 20%;
-    bottom: 10%;
-    overflow: hidden;
-    pointer-events: none;
-    z-index: 0; 
-  }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
-  /* background и footer (сверху) */
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
 
-  .login-form {
-    z-index: 1;
-    width: 30%;
-    margin: 5% auto;
-    display: flex;
-    align-self: center;
-    justify-content: center;
-    flex-direction: column;
-    padding-left: 32px;
-    background-color: white;
-    border-radius: 6px;
-  }
-  
-  .login-form p {
-    font-family: 'Montserrat';
-    font-size: 52px;
-    font-weight: bold;
-    margin: 0;
-    margin-top: 12px;
-    margin-bottom: 16px;
-  }
-  
-  .form-group {
-    align-items: center;
-    justify-self: center;
-  }
-  
-  .form-group input {
-    width: 87%;
-    padding: 16px;
-    border: 1px solid #ccc;
-    background-color: rgba(248, 248, 248, 1);
-    margin-bottom: 24px;
-    border-radius: 7px;
-  }
-  
-  button[type="submit"] {
-    width: 93%;
-    padding: 12px;
-    border: none;
-    background: rgba(194, 251, 215, 1);
-    color: rgba(0, 128, 0, 1);
-    cursor: pointer;
-    border-radius: 100px;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: rgba(36, 224, 124, 0.8);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  }
-  
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .login-form a {
-    color: rgba(0, 128, 0, 1);
-    text-decoration: underline;
-    font-family: 'Roboto';
-  }
-  
-  .help {
-    display: flex;
-    flex-wrap: nowrap;
-    font-family: 'Montserrat';
-    margin: 12px;
-    align-self: center;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  .help div{
-    margin-top: 12px;
-    margin-bottom: 12px;
-  }
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  display: block;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+
+.menu {
+  display: flex;
+  align-items: center;
+  margin-left: 114px;
+  padding: 0;
+  margin: 0;
+  margin-right: 100px;
+}
+
+.menu li {
+  margin-right: 40px;
+  flex-wrap: nowrap;
+  flex: 1;
+}
+
+.menu li:last-child {
+  margin-right: 45px;
+}
+
+.menu a {
+  padding-bottom: 4px;
+}
+
+.menu a:hover {
+  border-bottom: 1px solid black;
+}
+
+li {
+  font-family: 'Montserrat';
+}
+
+.menu .language {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.menu .language img {
+  margin-right: 5px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-button {
+  padding: 10px 20px;
+  background-color: #f1f1f1;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 160px;
+  background-color: #f1f1f1;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+}
+
+.dropdown-menu.open {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;
+}
+
+.dropdown-menu li {
+  padding: 10px;
+}
+
+.dropdown-menu li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown-menu li a.selected {
+  font-weight: bold;
+}
+
+header {
+  position: static;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 5%;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.product-name {
+  font-family: 'Advent Pro', bold;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.head_rectangle {
+  position: static;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  z-index: 1;
+  background-image: url(images/Rectangle\ 6.png);
+  background-repeat: repeat-x;
+  background-position: top;
+  background-size: contain;
+}
+
+.AdapFlex {
+  display: flex;
+  align-items: center;
+}
+
+.circle {
+  width: 65%;
+  height: 65%;
+  border-radius: 50%;
+  background-color: rgba(122, 248, 203, 0.3);
+  filter: blur(130px);
+  position: absolute;
+  left: 35%;
+  top: -30%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/*  оформление шапки страницы(сверху) */
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5%;
+  margin-right: 10%;
+  font-family: 'Montserrat';
+}
+
+.background_circle1 {
+  width: 50%;
+  height: 30%;
+  border-radius: 50%;
+  background-color: rgba(255, 242, 208, 1);
+  filter: blur(100px);
+  position: absolute;
+  right: -20%;
+  top: 30%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.background_circle2 {
+  width: 30%;
+  height: 40%;
+  border-radius: 50%;
+  background-color: rgba(168, 255, 118, 0.3);
+  filter: blur(100px);
+  position: absolute;
+  left: 20%;
+  bottom: 10%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* background и footer (сверху) */
+
+.login-form {
+  z-index: 1;
+  width: 30%;
+  margin: 5% auto;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 32px;
+  background-color: white;
+  border-radius: 6px;
+}
+
+.login-form p {
+  font-family: 'Montserrat';
+  font-size: 52px;
+  font-weight: bold;
+  margin: 0;
+  margin-top: 12px;
+  margin-bottom: 16px;
+}
+
+.form-group {
+  align-items: center;
+  justify-self: center;
+}
+
+.form-group input {
+  width: 87%;
+  padding: 16px;
+  border: 1px solid #ccc;
+  background-color: rgba(248, 248, 248, 1);
+  margin-bottom: 24px;
+  border-radius: 7px;
+}
+
+button[type="submit"] {
+  width: 93%;
+  padding: 12px;
+  border: none;
+  background: rgba(194, 251, 215, 1);
+  color: rgba(0, 128, 0, 1);
+  cursor: pointer;
+  border-radius: 100px;
+}
+
+button[type="submit"]:hover {
+  background-color: rgba(36, 224, 124, 0.8);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form a {
+  color: rgba(0, 128, 0, 1);
+  text-decoration: underline;
+  font-family: 'Montserrat';
+}
+
+.help {
+  display: flex;
+  flex-wrap: nowrap;
+  font-family: 'Montserrat';
+  margin: 12px;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.help div {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
