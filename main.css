@@ -172,7 +172,6 @@ header {
 }
 
 @media (max-width: 1020px) {
-
 .dropdown-menu.open li{
   padding: 5px;
   font-size: 12px;
@@ -514,10 +513,6 @@ header {
   text-align: center;
   margin-left: 10%;
   margin-right: 10%;
-}
-
-@media (max-width: 1200px) {
-
 }
 
 @media (max-width: 1000px) {
