@@ -128,7 +128,7 @@ header {
 .logo {
   display: flex;
   align-items: center;
-  margin-left: 5%;
+  margin-left: 2%;
 }
 
 .logo img {
@@ -175,6 +175,26 @@ header {
   z-index: 1;
 }
 
+@media (max-width: 1020px) {
+.menu li {
+  margin-right: 20px;
+}
+
+  .menu {
+    margin-right: 20px;
+  }
+
+  .logo img{
+    width: 40px;
+    height: 40px;
+  }
+
+  .product-name {
+    font-size: 26px;
+  }
+}
+
+
 /*  оформление шапки страницы(сверху) */
 
 .custom-button {
@@ -194,6 +214,7 @@ header {
 .custom-button:hover {
   background-color: rgba(23, 201, 169, 0.8);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: 0.5s ease;
 }
 
 .info {
@@ -206,6 +227,7 @@ header {
 }
 
 .cap {
+  flex-wrap: nowrap;
   width: 40%;
   font-family: 'Montserrat';
   font-size: 48px;
@@ -227,6 +249,67 @@ header {
   color: white;
   font-family: 'Montserrat';
   font-size: 16px;
+}
+
+@media (max-width: 1200px){
+
+  .custom-button{
+    padding: 7px 15px;
+  }
+
+  .cap {
+    font-size: 38px;
+  }
+
+  .text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1020px){
+  .head_rectangle {
+    height: 400px;
+  }
+
+  .cap {
+    font-size: 32px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 918px){
+  
+  .cap {
+    font-size: 28px;
+  }
+  .text {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 767px){
+  
+  .head_rectangle {
+    height: 320px;
+  }
+
+  .cap {
+    font-size: 22px;
+  }
+
+  .text {
+    font-size: 10px;
+  }
+
+  .button-text {
+    font-size: 12px;
+  }
+  .custom-button {
+    padding: 5px 10px;
+  }
 }
 
 .advantages {
@@ -283,6 +366,11 @@ header {
   align-items: center;
 }
 
+.pluses:hover{
+  transition: 0.5s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
 .pluses img {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -301,6 +389,10 @@ header {
   text-align: center;
   margin-left: 10%;
   margin-right: 10%;
+}
+
+@media (max-width: 1020px) {
+  
 }
 
 .reactions {
@@ -368,6 +460,11 @@ header {
 .text_f {
   display: flex;
   align-items: center;
+}
+
+.text_f:hover{
+  transition: 0.5s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 footer {
