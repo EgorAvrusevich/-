@@ -465,7 +465,7 @@ p {
   border-color: rgba(36, 203, 97, 1);
   border-width: 4px;
   border-style: solid;
-  height: 480px;
+  height: 40%;
   margin: 2%;
   width: 30%;
   display: flex;
@@ -542,86 +542,12 @@ p {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-@media (max-width: 1050px) {
-  .step1 {
-    margin-left: 10%;
-    width: 80%;
-  }
-
-  .tarif2 {
-    height: 420px;
-    width: 35%;
-  }
-}
-
-@media (max-width: 830px) {
-  .step1 {
-    margin-left: 7.5%;
-    width: 85%;
-  }
-
-  .tarif2 {
-    height: 400px;
-  }
-
-  .cost{
-    font-size: 42px;
-  }
-
-  p{
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 670px) {
-  .garant {
-    font-size: 10px;
-  }
-
-  .tarif2 {
-    height: 360px;
-  }
-}
-
-@media (max-width: 570px) {
-
-  .garant {
-    font-size: 8px;
-  }
-
-  .step1 {
-    width: 90%;
-    margin-left: 5%;
-  }
-
-  .tarif2 {
-    height: 300px;
-  }
-
-  .discount {
-    font-size: 20px;
-  }
-
-  .custom-button {
-    padding: 5px 10px;
-  }
-
-  .cost {
-    font-size: 36px;
-  }
-}
-
-@media (max-width: 490px) {
-  .step1 {
-    width: 98%;
-    margin-left: 1%;
-  }
-}
 
 .other {
   display: flex;
   position: relative;
-  background-image: url(images/Group\ 22.png);
+  background-image: url(images/table_tarifs.png);
+  background-repeat: repeat-x;
   background-size: contain;
   flex-direction: column;
   z-index: 1;
@@ -642,6 +568,19 @@ p {
   border-radius: 7px;
 }
 
+@media (max-width: 900px) {
+  .form-group input {
+    width: 70%;
+  }
+}
+
+@media (max-width: 769px) {
+  .form-group input {
+    padding: 8px;
+  }
+}
+
+
 .step2 {
   margin-left: 15%;
   display: flex;
@@ -654,6 +593,18 @@ p {
   font-size: 12px;
   color: rgba(155, 155, 155, 1);
   margin-bottom: 2%;
+}
+
+@media (max-width: 580px) {
+    .warning {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 420px) {
+  .warning {
+    font-size: 8px;
+  }
 }
 
 .step3 {
@@ -672,9 +623,16 @@ p {
   margin-bottom: 2%;
 }
 
+@media (max-width: 420px) {
+  .protect {
+    font-size: 10px;
+  }
+}
+
 .pay {
   display: flex;
 }
+
 
 .way_pay {
   display: flex;
@@ -699,6 +657,13 @@ p {
   padding-left: 2%;
 }
 
+@media (max-width:450px) {
+  .way_pay div {
+    margin: 5px;
+    font-size: 12px;
+  }
+}
+
 .way_pay div img {
   margin-left: auto;
 }
@@ -711,6 +676,20 @@ p {
   border-radius: 7px;
   width: 70%;
   margin-bottom: 5%;
+}
+
+@media (max-width: 769px) {
+  .pay {
+    flex-direction: column;
+  }
+
+  .way_pay {
+    width: 100%;
+  }
+
+  .info_pay {
+    width: 100%;
+  }
 }
 
 .classic {
@@ -776,4 +755,107 @@ p {
   font-size: 12px;
   margin: 2%;
   color: rgba(155, 155, 155, 1);
+}
+
+@media (max-width: 1050px) {
+  .step1, .step2, .step3  {
+    margin-left: 10%;
+    width: 80%;
+  }
+
+  .tarif2 {
+    height: 420px;
+    width: 35%;
+  }
+}
+
+@media (max-width: 830px) {
+  .step1, .step2, .step3  {
+    margin-left: 7.5%;
+    width: 85%;
+  }
+
+  p {
+    margin-top: 0;
+    font-size: 20px;
+  }
+
+  .tarif2 {
+    height: 400px;
+  }
+
+  .cost{
+    font-size: 42px;
+  }
+
+  p{
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 670px) {
+  .garant {
+    font-size: 10px;
+  }
+
+  .tarif2 {
+    height: 360px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 570px) {
+
+  .garant {
+    font-size: 8px;
+  }
+
+  .step1, .step2, .step3  {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .tarif2 {
+    height: 300px;
+  }
+
+  .discount {
+    font-size: 20px;
+  }
+
+  .custom-button {
+    padding: 5px 10px;
+  }
+
+  .cost {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 490px) {
+  .step1, .step2, .step3  {
+    width: 98%;
+    margin-left: 1%;
+  }
+}
+
+@media (max-width: 450px) {
+  .custom-button {
+    font-size: 10px;
+  }
+
+  .tarif2 {
+    height: 250px;
+  }
+
+  .cost {
+    font-size: 32px;
+  }
+
+  .garant {
+    font-size: 7px;
+  }
 }
